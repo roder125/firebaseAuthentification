@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  
+  <ion-list>
+
+  <ion-item class = "ion-item">
+    <ion-label floating>Username</ion-label>
+    <ion-input class="ion-input" type="text" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item class = "ion-item">
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-item class = "ion-item">
+    <ion-label>Keep logged in</ion-label>
+    <ion-checkbox [(ngModel)]="keepLoggedIn"></ion-checkbox>
+  </ion-item>
+ 
+</ion-list>
+
+
+<div id="topButtons">
+	<button ion-button (click)="signInUser()" item-left>Sign In</button>
+	<button ion-button (click)="register()" item-left>Register</button>
+</div>
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
